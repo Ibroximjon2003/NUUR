@@ -15,6 +15,8 @@ class Test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Color("FFB39CD0"),);
+    return Container(
+      color: Color(0xFFB39CD0),
+    );
   }
 }

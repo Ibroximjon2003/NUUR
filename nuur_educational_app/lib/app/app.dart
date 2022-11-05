@@ -1,5 +1,6 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:nuur_educational_app/presentation/screens/login_screen.dart';
 
 class MyApp extends StatefulWidget {
   MyApp._internal(); //private constructor
@@ -15,6 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return LoginPage();
   }
 }
