@@ -11,23 +11,23 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange,
+      backgroundColor: ColorManager.primary,
       body: SafeArea(
         child: Center(
           child: Column(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 child: Image(
-                  image: AssetImage(''),
+                  image: AssetImage('assets/images.jpg'),
                 ),
               ),
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Input your email',
                     hintStyle: TextStyle(color: Colors.grey)),
               ),
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Input your password',
@@ -35,30 +35,31 @@ class LoginPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text('Sign in'),
+                child: const Text('Sign in'),
               ),
-              Text('Or'),
+              const Text('Or'),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: ((context) => SignInPage())),
+                      MaterialPageRoute(
+                          builder: ((context) => const SignInPage())),
                     );
                   },
-                  child: Text('Sign up')),
-              SizedBox(height: 30),
+                  child: const Text('Sign up')),
+              const SizedBox(height: 30),
               Column(
                 children: [
                   SignInButton(
                     Buttons.Google,
                     onPressed: () {},
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   SignInButton(
                     Buttons.Facebook,
                     onPressed: () {},
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   SignInButton(
                     Buttons.LinkedIn,
                     onPressed: () {},

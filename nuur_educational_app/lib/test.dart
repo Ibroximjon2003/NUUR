@@ -1,6 +1,5 @@
-import 'package:flutter/animation.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
+
 import 'package:nuur_educational_app/app/app.dart';
 
 class Test extends StatelessWidget {
@@ -10,13 +9,13 @@ class Test extends StatelessWidget {
   }
 
   void getAppState() {
-    print(MyApp.instance.appState);
+    MyApp.instance.appState;
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFB39CD0),
+      color: const Color(0xFFB39CD0),
     );
   }
 }
