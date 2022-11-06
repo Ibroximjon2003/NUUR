@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:nuur_educational_app/presentation/color_manager.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -10,7 +9,7 @@ class OnBoardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Onboarding Screen'),
+        title: const Text('Onboarding Screen'),
       ),
       backgroundColor: ColorManager.primary,
       body: SafeArea(
