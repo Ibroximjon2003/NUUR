@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
 import 'package:nuur_educational_app/presentation/color_manager.dart';
+import 'package:nuur_educational_app/presentation/screens/onboarding_screen.dart';
 import 'package:nuur_educational_app/presentation/screens/signin_screen.dart';
 
 class LoginPage extends StatelessWidget {
@@ -34,7 +35,13 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: ((context) => OnBoardingScreen())),
+                  );
+                },
                 child: const Text('Sign in'),
               ),
               const Text('Or'),
@@ -43,7 +50,7 @@ class LoginPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => const SignInPage())),
+                          builder: ((context) => const SignUpPage())),
                     );
                   },
                   child: const Text('Sign up')),

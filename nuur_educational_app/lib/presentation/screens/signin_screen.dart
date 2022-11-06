@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nuur_educational_app/presentation/color_manager.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({super.key});
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
