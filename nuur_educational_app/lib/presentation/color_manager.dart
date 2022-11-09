@@ -6,4 +6,5 @@ class ColorManager {
   static const Color white = Color(0xffE9DEE9);
   static const Color green = Color(0x002a8900);
   static const Color appbarColor = Color(0x008c70b0);
+  static const Color primary_bold = Color.fromARGB(255, 148, 85, 225);
 }

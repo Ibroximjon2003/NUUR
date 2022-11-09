@@ -22,24 +22,28 @@ class Menu extends StatelessWidget {
                       color: ColorManager.primary,
                       child: Row(
                         children: [
-                          Image(image: AssetImage('assets/profile.jpg')),
+                          Flexible(
+                            child: Image(
+                              image: AssetImage('assets/profile.jpg'),
+                              height: 70,
+                              width: 70,
+                            ),
+                          ),
                           Text('Profile'),
                         ],
                       ),
                     ),
-                    flex: 2,
+                    flex: 1,
                   ),
                   Expanded(
                     child: Card(
                       color: ColorManager.primary,
-                      child: Container(
-                        child: Row(children: [
-                          Text('Words'),
-                          Container(
-                            child: Icon(IconData(4)),
-                          ),
-                        ]),
-                      ),
+                      child: Row(children: [
+                        Text('Words'),
+                        Image(
+                          image: AssetImage('assets/book.jpg'),
+                        ),
+                      ]),
                     ),
                     flex: 1,
                   ),
@@ -51,8 +55,10 @@ class Menu extends StatelessWidget {
                 color: ColorManager.primary,
                 child: Row(
                   children: [
-                    ImageIcon(
-                      AssetImage('assets/images.jpg'),
+                    CircleAvatar(
+                      child: Image(
+                        image: AssetImage('assets/lessons.jpg'),
+                      ),
                     ),
                     Text('Lessons'),
                   ],
@@ -65,8 +71,8 @@ class Menu extends StatelessWidget {
                 child: Row(
                   children: [
                     Text('Interactive & Intensive'),
-                    ImageIcon(
-                      AssetImage('assets/images.jpg'),
+                    Image(
+                      image: AssetImage('assets/interactive.jpg'),
                     ),
                   ],
                 ),
@@ -79,7 +85,7 @@ class Menu extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Card(
-                        child: Image(image: AssetImage('assets/images.jpg')),
+                        child: Image(image: AssetImage('assets/settings.jpg')),
                       ),
                       flex: 1,
                     ),
@@ -89,7 +95,7 @@ class Menu extends StatelessWidget {
                         child: Row(
                           children: [
                             Text('Triumphs'),
-                            Image(image: AssetImage('assets/images.jpg')),
+                            Image(image: AssetImage('assets/triumphs.jpg')),
                           ],
                         ),
                       ),

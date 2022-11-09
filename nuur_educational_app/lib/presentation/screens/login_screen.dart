@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
 import 'package:nuur_educational_app/presentation/color_manager.dart';
+import 'package:nuur_educational_app/presentation/screens/main_menu_screen.dart';
 import 'package:nuur_educational_app/presentation/screens/onboarding_screen.dart';
 import 'package:nuur_educational_app/presentation/screens/signin_screen.dart';
 
@@ -19,14 +20,14 @@ class LoginPage extends StatelessWidget {
             children: [
               const CircleAvatar(
                 child: Image(
-                  image: AssetImage('assets/images.jpg'),
+                  image: AssetImage('assets/nuur_green.png'),
                 ),
               ),
               const TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Input your email',
-                    hintStyle: TextStyle(color: Colors.grey)),
+                  border: OutlineInputBorder(),
+                  hintText: 'Username',
+                ),
               ),
               const TextField(
                 decoration: InputDecoration(
@@ -38,8 +39,7 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: ((context) => const OnBoardingScreen())),
+                    MaterialPageRoute(builder: ((context) => const Menu())),
                   );
                 },
                 child: const Text('Sign in'),

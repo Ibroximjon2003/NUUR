@@ -15,7 +15,7 @@ class SignUpPage extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   child: Image(
-                    image: AssetImage('assets/images.jpg'),
+                    image: AssetImage('assets/nuur_green.png'),
                   ),
                 ),
                 const SizedBox(height: 40),
